@@ -123,7 +123,7 @@ const DocumentCardControl : React.FunctionComponent = (props:any) => {
           },
         ],
       };
-      
+
       const previewPropsTest: IDocumentCardPreviewProps = {
         getOverflowDocumentCountText: (overflowCount: number) => `+${overflowCount} more`,
         previewImages: [
@@ -207,7 +207,7 @@ const DocumentCardControl : React.FunctionComponent = (props:any) => {
         },                
       ];      
 
-      const tokens = { childrenGap: 2 };
+      const tokens = { childrenGap: 5 };
 
     return (
         <>
@@ -301,6 +301,111 @@ const DocumentCardControl : React.FunctionComponent = (props:any) => {
                 <DocumentCardActions actions={documentCardActionsTest} views={233} />
             </DocumentCard>                                                
           </Stack>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <Stack tokens={tokens} horizontal style={{overflow:"auto", scrollbarWidth:"thin", height:"1000px",width:"1200px", border:"1px solid grey", padding:"10px"}}>
+          
+        <Stack tokens={tokens} verticalFill horizontalAlign="center" style={{overflow:"hidden", scrollbarWidth:"thin", height:"700px",width:"400px", border:"1px solid black", float:"left"}}>
+          <strong>Stack 1</strong>
+          <Stack tokens={tokens} verticalFill horizontalAlign="center" style={{overflowX:"hidden", overflowY:"auto", scrollbarWidth:"thin", height:"700px",width:"400px", border:"1px solid black", float:"left"}}>
+              <DocumentCard aria-label="aria-label" key="card2" role="menuitem">
+                <DocumentCardPreview {...previewPropsTest} />
+                <DocumentCardLocation
+                    location="DocumentCardLocation"
+                    locationHref="http://microsoft.com"
+                    ariaLabel="DocumentCardLocation Label"
+                />
+                <DocumentCardTitle title="DocumentCardTitle" />
+                <DocumentCardActivity
+                    activity="DocumentCardActivity"
+                    people={[{ name: 'DocumentCardActivity People', profileImageSrc: TestImages.personaMale }]}
+                />
+                <DocumentCardActions actions={documentCardActionsTest} views={233} />
+            </DocumentCard> 
+            <DocumentCard aria-label="aria-label" key="card2" role="menuitem">
+                <DocumentCardPreview {...previewPropsTest} />
+                <DocumentCardLocation
+                    location="DocumentCardLocation"
+                    locationHref="http://microsoft.com"
+                    ariaLabel="DocumentCardLocation Label"
+                />
+                <DocumentCardTitle title="DocumentCardTitle" />
+                <DocumentCardActivity
+                    activity="DocumentCardActivity"
+                    people={[{ name: 'DocumentCardActivity People', profileImageSrc: TestImages.personaMale }]}
+                />
+                <DocumentCardActions actions={documentCardActionsTest} views={233} />
+            </DocumentCard>
+            <DocumentCard aria-label="aria-label" key="card2" role="menuitem">
+                <DocumentCardPreview {...previewPropsTest} />
+                <DocumentCardLocation
+                    location="DocumentCardLocation"
+                    locationHref="http://microsoft.com"
+                    ariaLabel="DocumentCardLocation Label"
+                />
+                <DocumentCardTitle title="DocumentCardTitle" />
+                <DocumentCardActivity
+                    activity="DocumentCardActivity"
+                    people={[{ name: 'DocumentCardActivity People', profileImageSrc: TestImages.personaMale }]}
+                />
+                <DocumentCardActions actions={documentCardActionsTest} views={233} />
+            </DocumentCard> 
+            <DocumentCard aria-label="aria-label" key="card2" role="menuitem">
+                <DocumentCardPreview {...previewPropsTest} />
+                <DocumentCardLocation
+                    location="DocumentCardLocation"
+                    locationHref="http://microsoft.com"
+                    ariaLabel="DocumentCardLocation Label"
+                />
+                <DocumentCardTitle title="DocumentCardTitle" />
+                <DocumentCardActivity
+                    activity="DocumentCardActivity"
+                    people={[{ name: 'DocumentCardActivity People', profileImageSrc: TestImages.personaMale }]}
+                />
+                <DocumentCardActions actions={documentCardActionsTest} views={233} />
+            </DocumentCard>             
+          </Stack>
+          </Stack>
+          
+          <Stack tokens={tokens} verticalFill horizontalAlign="center" style={{overflow:"hidden", scrollbarWidth:"thin", height:"700px",width:"400px", border:"1px solid black", float:"left"}}>
+            <strong>Stack 2</strong>
+            <Stack tokens={tokens} verticalFill horizontalAlign="center" style={{overflowX:"hidden", overflowY:"auto", scrollbarWidth:"thin", height:"700px",width:"400px", border:"1px solid black", float:"left"}}>
+
+              <DocumentCard aria-label="aria-label" key="card2" role="menuitem">
+                <DocumentCardPreview {...previewPropsTest} />
+                <DocumentCardLocation
+                    location="DocumentCardLocation"
+                    locationHref="http://microsoft.com"
+                    ariaLabel="DocumentCardLocation Label"
+                />
+                <DocumentCardTitle title="DocumentCardTitle" />
+                <DocumentCardActivity
+                    activity="DocumentCardActivity"
+                    people={[{ name: 'DocumentCardActivity People', profileImageSrc: TestImages.personaMale }]}
+                />
+                <DocumentCardActions actions={documentCardActionsTest} views={233} />
+            </DocumentCard> 
+            <DocumentCard aria-label="aria-label" key="card2" role="menuitem">
+                <DocumentCardPreview {...previewPropsTest} />
+                <DocumentCardLocation
+                    location="DocumentCardLocation"
+                    locationHref="http://microsoft.com"
+                    ariaLabel="DocumentCardLocation Label"
+                />
+                <DocumentCardTitle title="DocumentCardTitle" />
+                <DocumentCardActivity
+                    activity="DocumentCardActivity"
+                    people={[{ name: 'DocumentCardActivity People', profileImageSrc: TestImages.personaMale }]}
+                />
+                <DocumentCardActions actions={documentCardActionsTest} views={233} />
+            </DocumentCard> 
+          </Stack>
+        </Stack>
+        </Stack>
+
         </>
     );
 }
