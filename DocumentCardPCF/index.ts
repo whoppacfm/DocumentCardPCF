@@ -31,6 +31,14 @@ export class DocumentCardPCF implements ComponentFramework.StandardControl<IInpu
 
         this.changeFunction = notifyOutputChanged;
         
+
+        /*
+        context.resources.getResource("", function(data:any) {
+            //..
+        }, function(){});
+        */
+
+
         //this.crmfieldvalue = context.parameters.crmfieldvalue.raw as any;             
     }
 

@@ -146,7 +146,7 @@ const DocumentCardControl : React.FunctionComponent = (props:any) => {
               target: '_blank',
             },
             previewImageSrc: TestImages.documentPreview,
-            iconSrc: TestImages.iconPpt,
+            iconSrc: "./wordIcon.jpg",//"https://png.pngtree.com/element_our/md/20180627/md_5b33460fe6357.jpg",
             imageFit: ImageFit.cover,
             width: 318,
             height: 196,
