@@ -5,5 +5,6 @@ A PCF development template for FluentUI Document Card Control
 <br/><br/>
 Document Cards inside of FluentUI Stack Container Control
 <br/><br/>
-![image](https://user-images.githubusercontent.com/13801775/202135810-b46f8e6c-603c-4426-b514-0a64b37c3119.png)
+![image](https://user-images.githubusercontent.com/13801775/202140937-958cf4a5-50ec-4d28-a1bf-0600b13340af.png)
+
 
