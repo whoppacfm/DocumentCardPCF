@@ -33,7 +33,7 @@
     <resources>
       <code path="index.ts" order="1"/>
       <css path="documentcardcontrol.css" order="1" />
-      <img path="wordIcon.jpg"/>
+      <img path="wordIcon.png"/>
       <!-- UNCOMMENT TO ADD MORE RESOURCES
       <resx path="strings/DocumentCardPCF.1033.resx" version="1.0.0" />
       -->
